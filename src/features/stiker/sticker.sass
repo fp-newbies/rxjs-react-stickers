@@ -1,0 +1,88 @@
+.sticker
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  flex-wrap: wrap
+  width: 250px
+  height: auto
+  background-color: #fff
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2)
+  transition: 0.3s box-shadow
+  z-index: 1
+  &[data-active="true"]
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.8)
+    /* transform: scale(1.05) */
+    /* transform-origin: top center */
+
+.head
+  position: relative
+  width: 100%
+  height: 30px
+  background-color: #bbb
+  user-select: none
+  display: flex
+  align-items: center
+  justify-content: space-between
+  z-index: 3
+  .remove
+    width: 30px
+    height: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: auto
+    color: #333
+    cursor: pointer
+    &::after
+      font-family: 'Material Icons'
+      content: 'close'
+      display: block
+      pointer-events: none
+      background-color: inherit
+      font-size: 20px
+
+.body
+  display: flex
+  position: relative
+  width: 100%
+  background-color: #fff
+  color: #000
+  &::after
+    font-family: 'Material Icons'
+    content: 'signal_cellular_4_bar'
+    display: block
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 10px
+    height: 10px
+    pointer-events: none
+    background-color: inherit
+    font-size: 10px
+    color: #555
+  textarea
+    width: 250px
+    min-width: 250px
+    min-height: 200px
+    border: none
+    outline: none
+    padding: 10px
+    color: inherit
+    background-color: transparent
+    &::selection
+      background: #555
+      color: #fff
+      text-shadow: none
+
+    &::-webkit-scrollbar-track
+      background: transparent
+
+    &::-webkit-scrollbar
+      width: 10px
+      height: 10px
+
+    &::-webkit-scrollbar-thumb
+      background-color: #555
+      cursor: pointer
+      border-radius: 5px
