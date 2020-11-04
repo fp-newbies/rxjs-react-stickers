@@ -1,4 +1,4 @@
-# rxjs stepper
+# rxjs react stickers
 
 ## Scripts
 - ```yarn``` install dependency
