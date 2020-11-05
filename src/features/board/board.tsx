@@ -1,5 +1,5 @@
 import React from 'react'
-const c = require('./board.sass')
+import * as c from './board.sass';
 
 interface Props { }
 

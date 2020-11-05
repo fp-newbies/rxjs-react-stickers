@@ -1,5 +1,5 @@
 import React from 'react'
-const c = require('./sticker.sass')
+import * as c from './sticker.sass'
 
 interface Props { }
 
