@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRxEvent, useRxState } from '../../libs/rxjs-hooks'
 import { mouseDND, MouseEventDiv } from './dnd.sticker'
-const c = require('./sticker.sass')
+import * as c from './sticker.sass'
 
 interface Props { }
 
